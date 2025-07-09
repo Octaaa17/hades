@@ -1,0 +1,171 @@
+body{
+    background-color: darkred;
+    background-image: url(./images/background.png);
+    background-size: cover; /* Hace que la imagen cubra todo el div */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* No repite la imagen */
+margin: 0;
+}
+#titulo{
+    text-align: center;
+}
+.subtitulo{
+    text-align: center;
+}
+img{
+    text-align: center;
+}
+
+  .flex-container {
+    background-color: transparent;
+    text-decoration: rgb(255, 255, 255);
+    padding: 5px;
+  flex-flow: row wrap;
+    /* FLEXBOX */
+    /* display: flex; se utiliza para alinear nuestros elementos con flexbox */
+    display: flex;
+    /* Centrar div */
+    justify-content: center
+  }
+.caja {
+  padding: 10px 20px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.flex-container .caja {
+  color: rgb(0, 0, 0);
+   font-family: 'Arial', sans-serif;
+}
+
+.caja:hover {
+  background-color: #ff0000;
+}
+  
+  .caja {
+      border: 0px solid rgb(0, 0, 0);
+      font-size: 30px;
+      text-align: center;
+      margin: 15px;
+      /* width: 150px; */
+      /* height: 150px; */
+  }
+  
+  .txt1 {
+      display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* altura del viewport (pantalla completa) */
+  
+    }
+    .txt1 img{
+         width: 600px;   /* Cambiá este valor al tamaño que quieras */
+  height:auto;   /* Mantiene la proporción original de la imagen */
+  background-size: cover; /* Hace que la imagen cubra todo el div */
+  background-position: center; /* Centra la imagen */
+  background-repeat : no-repeat; /* No repite la imagen */
+
+    }
+
+    .img-hades1{
+      width: 600px;
+height:auto;
+text-align: center;
+ }
+
+nav a {
+  text-decoration: none; /* Quita el subrayado */
+  color: inherit;         /* Hereda el color del contenedor o puedes usar 'black' */
+}
+
+.h1-personajes{
+    text-align: center;
+    font-family: sans-serif;
+}
+.h1-historia{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.personajes-container {
+  display: flex;
+  flex-wrap: wrap;         /* Permite que se bajen si no entran */
+  margin: auto;  
+   gap: 30px;
+  margin: 40px auto;          /* Centrado opcional */
+justify-content: center;
+}
+.personaje img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.7s ease;
+}
+
+.personaje img:hover {
+  transform: scale(1.6);
+  cursor: pointer;
+}
+
+
+  /* TODAS ESAS FUERON PROPIEDADES FLEX PARA EL CONTENEDOR, AHORA VAMOS A VER PROPIEDADES PARA LOS ELEMENTOS */
+  /* ORDER */
+  /* LA PROPIEDAD ORDER NOS PERMITE ELEGIR EL ORDEN EN EL QUE VAN A APARECER LOS ELEMENTOS */
+  /* PEGAR ESTO EN HTML. style="order: 1;" */ /* ESTO LO HARÍAMOS CON CSS NO CON STYLE EN EL HTML */
+  
+  /* FLEX-GROW */
+  /* CON FLEX-GROW PODEMOS DEFINIR CUANTO OCUPA CADA UNO DE LOS ELEMENTOS RESPECTO AL OTRO */
+  /* PEGAR ESTO EN EL HTML. style="flex-grow: 1;" */ /* ESTO LO HARÍAMOS CON CSS NO CON STYLE EN EL HTML */
+  
+  /* FLEX-SHRINK */
+  /* LO QUE SHRINK NOS PERMITE ES DETENER LA POSIBILIDAD DE QUE UN ELEMENTO SE ACHIQUE MÁS ALLÁ DEL ANCHO QUE TENGA DEFINIDO*/
+  /* POR LO CUAL SI EL RESTO DE ELEMENTOS TIENE QUE ACHICARSE PARA RESPETAR EL TAMAÑO QUE TIENE EL SHRINK, ENTONCES LO HARÁ */
+  /* PEGAR ESTO EN EL HTML, SACAR EL WRAP Y AGREGAR MÁS CAJAS. style="flex-shrink: 0;" */ /* ESTO LO HARÍAMOS CON CSS NO CON STYLE EN EL HTML */
+  
+  /* .caja1 {
+      order: 2;
+      flex-grow: 2;
+      flex-shrink: 0;
+  }
+  
+  .caja2 {
+      order: 3;
+  }
+  
+  .caja3 {
+  order: 4;
+  }
+  
+  .caja4 {
+  order: 1;
+  } */
+
+  footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    text-decoration: none;
+  }
+ 
+  .container2{
+    background-color: #f2efec;
+    height: 70%;
+    padding: 1.618em 1.618em 0;
+  }
+
+  .box1{
+    background-color: #222;
+    height: 14cm;
+    width: 8cm;
+    margin: auto;
+  }
+
+  .box1 img{
+    padding: 10%;
+    height: auto;
+    width: 6cm;
+  }
